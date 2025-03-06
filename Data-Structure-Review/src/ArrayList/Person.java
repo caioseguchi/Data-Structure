@@ -1,6 +1,7 @@
 package ArrayList;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 public class Person implements Comparable<Person>{
     //Variables
@@ -54,6 +55,18 @@ public class Person implements Comparable<Person>{
     @Override
     public int compareTo(Person person) {
         return this.getName().compareToIgnoreCase(person.getName());
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Person person)) return false;
+        return age == person.age && Objects.equals(name, person.name) && Objects.equals(lastName, person.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, lastName, age);
     }
 }
 
