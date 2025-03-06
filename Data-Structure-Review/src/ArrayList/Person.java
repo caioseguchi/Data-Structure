@@ -52,11 +52,13 @@ public class Person implements Comparable<Person>{
                 '}';
     }
 
+    // Default sorting (by name, case insensitive)
     @Override
     public int compareTo(Person person) {
         return this.getName().compareToIgnoreCase(person.getName());
     }
 
+    // Override equals and hashCode for correct list behavior
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -70,6 +72,7 @@ public class Person implements Comparable<Person>{
     }
 }
 
+// Comparator for sorting by Age
 class ComparatorAge implements Comparator<Person>{
     @Override
     public int compare(Person o1, Person o2) {
@@ -77,6 +80,7 @@ class ComparatorAge implements Comparator<Person>{
     }
 }
 
+// Comparator for sorting by Last Name (case insensitive)
 class ComparatorLastName implements Comparator<Person>{
     @Override
     public int compare(Person o1, Person o2) {
@@ -84,6 +88,7 @@ class ComparatorLastName implements Comparator<Person>{
     }
 }
 
+// Comparator for sorting by Name, then Last Name, then Age
 class ComparatorNameLastnameAge implements Comparator<Person>{
     @Override
     public int compare(Person o1, Person o2) {
