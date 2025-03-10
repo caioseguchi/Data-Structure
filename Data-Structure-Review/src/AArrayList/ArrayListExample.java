@@ -1,4 +1,4 @@
-package ArrayList;
+package AArrayList;
 
 import java.util.Collections;
 import java.util.List;
@@ -16,7 +16,7 @@ public class ArrayListExample {
         list.add(new Person("Laura", "Santana", 23));
         list.add(new Person("Lucas", "Pontes", 23));
 
-        // Print the full list
+
         System.out.println("List of Persons: " + list);
         System.out.println("-------------------");
 

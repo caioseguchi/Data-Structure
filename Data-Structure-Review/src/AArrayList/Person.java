@@ -1,4 +1,4 @@
-package ArrayList;
+package AArrayList;
 
 import java.util.Comparator;
 import java.util.Objects;
