@@ -18,3 +18,15 @@ This repository contains a **Stack implementation in Java** using an **ArrayList
 ✔ Uses `ArrayList<T>` for dynamic storage.  
 ✔ Supports generic objects (e.g., `Student` class).  
 ✔ Provides `push`, `pop`, `peek`, `isEmpty`, and `size` operations.  
+
+---
+
+# 🐱 Queue Implementation with ArrayList and ADT in Java
+
+This repository contains a **Queue** implementation in **Java** using an **ArrayList** to store objects while following the **Abstract Data Type (ADT)** approach. The queue follows the **First-In-First-Out (FIFO)** principle.
+
+## 🚀 Features
+✔ Implements `QueueADT<T>` to define queue behavior.  
+✔ Uses `ArrayList<T>` for dynamic storage.  
+✔ Supports generic objects (e.g., `Cat` class).  
+✔ Provides `enqueue`, `dequeue`, `peek`, `isEmpty`, and `size` operations. 
